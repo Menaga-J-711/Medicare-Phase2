@@ -1,0 +1,141 @@
+/* Overlay */
+.hospital-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10001;
+}
+
+/* Popup */
+.hospital-popup {
+  width: 900px;
+  max-width: 95%;
+  max-height: 85vh;
+  background: #ffffff;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.4);
+  animation: popupFade 0.25s ease;
+}
+
+/* Header */
+.hospital-popup-header {
+  padding: 22px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.hospital-popup-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Close */
+.close-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #e53935;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Scroll area */
+.hospital-popup-body {
+  padding: 26px 30px;
+  overflow-y: auto;
+}
+
+/* Card */
+.hospital-card {
+  background: #f9fbff;
+  border-radius: 18px;
+  padding: 22px 24px;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Title row */
+.hospital-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.hospital-title h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a237e;
+}
+
+.distance {
+  background: #1976d2;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Text */
+.hospital-card p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.navigate-btn,
+.ambulance-btn {
+  padding: 12px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.navigate-btn {
+  background: #1976d2;
+  color: white;
+}
+
+.ambulance-btn {
+  background: #2e7d32;
+  color: white;
+}
+
+/* Empty */
+.no-data {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Animation */
+@keyframes popupFade {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
